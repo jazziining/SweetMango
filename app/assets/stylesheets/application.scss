@@ -15,7 +15,9 @@
 
  $burnt-orange: #D45113;
  $sandy-brown: #F29660;
- $big-foot-feet: #F28E54;
+ $mandarin: #F27D3A;
+ $topaz: #FFC27D;
+ $neon-carrot: #FF9F51;
 
  .banner-container{
 
@@ -186,23 +188,23 @@ body{
 	font-weight: normal;
 	padding: 20px;
 	margin: -20px -20px 50px -20px;
-	background-color: #eee;
-	background-image: -moz-linear-gradient(#fff,#eee);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
-	background-image: -webkit-linear-gradient(#fff, #eee);
-	background-image: -o-linear-gradient(#fff, #eee);
-	background-image: -ms-linear-gradient(#fff, #eee);
-	background-image: linear-gradient(#fff, #eee);
+	background-color: $topaz;
+	background-image: -moz-linear-gradient(#fff,$topaz);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to($topaz));
+	background-image: -webkit-linear-gradient(#fff, $topaz);
+	background-image: -o-linear-gradient(#fff, $topaz);
+	background-image: -ms-linear-gradient(#fff, $topaz);
+	background-image: linear-gradient(#fff, $topaz);
 }
 
 #pricing-table #most-popular h3 {
-	background-color: #ddd;
-	background-image: -moz-linear-gradient(#eee,#ddd);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
-	background-image: -webkit-linear-gradient(#eee, #ddd);
-	background-image: -o-linear-gradient(#eee, #ddd);
-	background-image: -ms-linear-gradient(#eee, #ddd);
-	background-image: linear-gradient(#eee, #ddd);
+	background-color: $neon-carrot;
+	background-image: -moz-linear-gradient($topaz,$neon-carrot);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($topaz), to($neon-carrot));
+	background-image: -webkit-linear-gradient($topaz, $neon-carrot);
+	background-image: -o-linear-gradient($topaz, $neon-carrot);
+	background-image: -ms-linear-gradient($topaz, $neon-carrot);
+	background-image: linear-gradient($topaz, $neon-carrot);
 	margin-top: -30px;
 	padding-top: 30px;
 	-moz-border-radius: 5px 5px 0 0;
@@ -224,9 +226,8 @@ body{
 
 #pricing-table h3 span {
 	display: block;
-	font: bold 25px/100px Georgia, Serif;
 	color: #777;
-	background: #fff;
+  background: white;
 	border: 5px solid #fff;
 	height: 100px;
 	width: 100px;
@@ -238,6 +239,7 @@ body{
 	-webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
 	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
 }
+
 
 /* --------------- */
 
@@ -264,12 +266,12 @@ body{
 	text-decoration: none;
 	display: inline-block;
 	background-color: $sandy-brown;
-	background-image: -moz-linear-gradient(#72ce3f, #62bc30);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#72ce3f), to(#62bc30));
-	background-image: -webkit-linear-gradient(#72ce3f, #62bc30);
-	background-image: -o-linear-gradient(#72ce3f, #62bc30);
-	background-image: -ms-linear-gradient(#72ce3f, #62bc30);
-	background-image: linear-gradient(#72ce3f, #62bc30);
+	background-image: -moz-linear-gradient($sandy-brown, $mandarin);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($sandy-brown), to($mandarin));
+	background-image: -webkit-linear-gradient($sandy-brown, $mandarin);
+	background-image: -o-linear-gradient($sandy-brown, $mandarin);
+	background-image: -ms-linear-gradient($sandy-brown, $mandarin);
+	background-image: linear-gradient($sandy-brown, $mandarin);
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
@@ -280,17 +282,17 @@ body{
 }
 
 #pricing-table .signup:hover {
-	background-color: #62bc30;
-	background-image: -moz-linear-gradient(#62bc30, #72ce3f);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#62bc30), to(#72ce3f));
-	background-image: -webkit-linear-gradient(#62bc30, #72ce3f);
-	background-image: -o-linear-gradient(#62bc30, #72ce3f);
-	background-image: -ms-linear-gradient(#62bc30, #72ce3f);
-	background-image: linear-gradient(#62bc30, #72ce3f);
+	background-color: $mandarin;
+	background-image: -moz-linear-gradient($mandarin, $sandy-brown);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($mandarin), to($sandy-brown));
+	background-image: -webkit-linear-gradient($mandarin, $sandy-brown);
+	background-image: -o-linear-gradient($mandarin, $sandy-brown);
+	background-image: -ms-linear-gradient($mandarin, $sandy-brown);
+	background-image: linear-gradient($mandarin, $sandy-brown);
 }
 
 #pricing-table .signup:active, #pricing-table .signup:focus {
-	background: #62bc30;
+	background: $mandarin;
 	top: 2px;
 	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
@@ -310,4 +312,9 @@ body{
 
 .clear {
   zoom:1
+}
+
+#pricing-table h3 span img {
+  width: 70%;
+  margin: 15px;
 }
