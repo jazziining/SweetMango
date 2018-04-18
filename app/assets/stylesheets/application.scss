@@ -19,17 +19,14 @@
  $topaz: #FFC27D;
  $neon-carrot: #FF9F51;
 
- .banner-container{
-
- }
-
- .main-page-header {
-
- }
-
  .main-banner-image {
   height: 100%;
   width: 100%;
+}
+
+.logo {
+  height: 70px;
+  width: 120px;
 
 }
 
@@ -58,16 +55,15 @@
   right: 2%;
 }
 
-.price-list {
+.paragraph {
   text-align: center;
-  box-sizing: border-box;
-  padding-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.columns {
+.sub-head {
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  box-sizing: border-box;
   padding-top: 5%;
 }
 
@@ -86,57 +82,13 @@
     box-shadow: 0 8px 12px 0 $burnt-orange;
 }
 
-.price-table li {
-  border-bottom: 1px solid white;
-  padding: 10px;
-  text-align: center;
-}
-
-.header-1 {
-  background-color: $burnt-orange;
-  color: white;
-}
-
-.header-2 {
-  background-color: $burnt-orange;
-  color: white;
-}
-
 // @media only screen and (max-width: 600px) {
 //   .columns {
 //     width: 100%;
 //   }
 // }
 
-.container {
-  padding: 10%;
-  text-align: center;
 
-}
-
- .tab-content {
-  color: $burnt-orange;
-  // padding: 5px 15px;
-  list-style-type: none;
-  padding-top: 2.5%;
-}
-
-.container a {
-  color: $burnt-orange;
-}
-
-#tab {
-  width: 50%;
-  margin: auto;
-}
-
-.table-head th {
-  text-align: center;
-}
-
-body{
-  background: #303030;
-}
 
 #pricing-table {
 	margin: 100px auto;
@@ -186,7 +138,7 @@ body{
 #pricing-table h3 {
 	font-size: 20px;
 	font-weight: normal;
-	padding: 20px;
+	padding: 10px;
 	margin: -20px -20px 50px -20px;
 	background-color: $topaz;
 	background-image: -moz-linear-gradient(#fff,$topaz);
@@ -317,4 +269,40 @@ body{
 #pricing-table h3 span img {
   width: 70%;
   margin: 15px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+.about-picture {
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+.about-title {
+  text-align: center;
+}
+
+
+.container {
+  padding: 5%;
+}
+
+.map-container {
+  padding: 5%;
+}
+
+.map-title {
+  padding-bottom: 5%;
+  text-align: center;
 }
