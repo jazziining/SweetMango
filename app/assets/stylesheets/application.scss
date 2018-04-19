@@ -39,6 +39,7 @@
   width: 100%;
   text-align: center;
   background-color: rgba(0,0,0,0.1);
+  z-index: 500;
 }
 
 #subnav a {
@@ -53,6 +54,8 @@
   position: fixed;
   bottom: 2%;
   right: 2%;
+  z-index: 500;
+
 }
 
 .paragraph {
@@ -97,7 +100,7 @@
 }
 
 #pricing-table .plan {
-	font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+	font: 12px;
 	text-shadow: 0 1px rgba(255,255,255,.8);
 	background: #fff;
 	border: 1px solid #ddd;
@@ -132,8 +135,6 @@
 	-webkit-border-radius: 0 5px 5px 0;
 	border-radius: 0 5px 5px 0;
 }
-
-/* --------------- */
 
 #pricing-table h3 {
 	font-size: 20px;
@@ -192,9 +193,6 @@
 	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
 }
 
-
-/* --------------- */
-
 #pricing-table ul {
 	margin: 20px 0 0 0;
 	padding: 0;
@@ -206,14 +204,12 @@
 	padding: 10px 0;
 }
 
-/* --------------- */
-
 #pricing-table .signup {
 	position: relative;
 	padding: 8px 20px;
 	margin: 20px 0 0 0;
 	color: #fff;
-	font: bold 14px Arial, Helvetica;
+	font: bold 14px;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: inline-block;
@@ -293,12 +289,17 @@
   text-align: center;
 }
 
+// #map-container {
+//   width: 400px;
+//   margin: auto;
+// }
+//
+// #instagram-container {
+//   // margin-right: 5%;
+//
+// }
 
 .container {
-  padding: 5%;
-}
-
-.map-container {
   padding: 5%;
 }
 
@@ -306,3 +307,117 @@
   padding-bottom: 5%;
   text-align: center;
 }
+
+.ins-pic {
+  width: 180px;
+  height: 180px;
+}
+
+.insta-title {
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 1em;
+
+}
+
+ .push {
+  height: 50px;
+ }
+
+.footer-container {
+  margin-top: 5%;
+  background-color: $neon-carrot;
+}
+
+.footer-logo, .footer-links, .footer-social-media, .footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright p {
+  margin: auto;
+  font-size: 10px;
+  background-color: $mandarin;
+}
+
+.footer-social-media img {
+    width: 30px;
+    margin-bottom: 2%;
+}
+
+.footer-links {
+  padding-top: 2%;
+}
+
+.footer-links a {
+    color: black;
+}
+
+// .footer-links a {
+//     color: #6195FF;
+//     text-decoration: none;
+//     -webkit-transition: 0.2s opacity;
+//     transition: 0.2s opacity;
+// }
+//
+// .footer-links a:hover, a:focus {
+//     text-decoration: none;
+//     outline: none;
+//     opacity: 0.8;
+//     color: #6195FF;
+// }
+
+
+//
+// .footer-logo {
+//     text-align: center;
+//     margin-bottom: 40px;
+// }
+//
+//
+// .footer-follow {
+//     text-align: center;
+//     margin-bottom: 20px;
+// }
+// .footer-follow li {
+//     display: inline-block;
+//     margin-right: 10px;
+//     margin-bottom: 13px;
+// }
+//
+// .footer-follow li a {
+//   display: inline-block;
+//   width: 50px;
+//   height: 50px;
+//   line-height: 50px;
+//   text-align: center;
+//   border-radius: 3px;
+//   background-color: #6195FF;
+//   color:#FFF;
+// }
+//
+// .footer-copyright p {
+//     text-align: center;
+//     font-size: 14px;
+//     text-transform: uppercase;
+//     margin: 0;
+//     color:#868F9B;
+// }
