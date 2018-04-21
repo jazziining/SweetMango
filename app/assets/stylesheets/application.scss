@@ -38,17 +38,17 @@
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  background-color: rgba(0,0,0,0.1);
+  background-color: $neon-carrot;
   z-index: 500;
 }
 
 #subnav a {
   padding: 20px;
   height: 2%;
-  color: $burnt-orange;
+  color: black;
 }
 
-.btn {
+.contact-form .btn {
   color: $burnt-orange;
   border-color: $burnt-orange;
   position: fixed;
@@ -62,12 +62,19 @@
   text-align: center;
   padding-left: 15%;
   padding-right: 15%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
+.faq-button .btn {
+  color: $burnt-orange;
+  border-color: $burnt-orange;
+}
+
 
 .sub-head {
   text-align: center;
   box-sizing: border-box;
-  padding-top: 5%;
 }
 
 .price-table {
@@ -95,6 +102,7 @@
 
 #pricing-table {
 	margin: 100px auto;
+  margin-top: 50px;
 	text-align: center;
 	width: 900px;
 }
@@ -305,6 +313,10 @@
 
 .map-title {
   padding-bottom: 5%;
+  text-align: center;
+}
+
+#map-container {
   text-align: center;
 }
 

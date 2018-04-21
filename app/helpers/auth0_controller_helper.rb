@@ -1,0 +1,2 @@
+module Auth0ControllerHelper
+end
