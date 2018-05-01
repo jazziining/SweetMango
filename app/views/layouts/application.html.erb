@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html>
-
+  <%= favicon_link_tag 'favicon.png'%>
   <head>
     <title>SweetMango</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   </head>
 
   <body>
     <div class="wrapper">
-
-
-        <div id="subnav">
-          <a href="/pages/about">About</a>
-          <a href="/pages/contact">Contact</a>
-          <a href="/"><%= image_tag('SweetMangoLogo_Transparent.png', class: "logo") %></a>
-          <a href="/pages/merchandise">Merchandise</a>
-          <a href="/pages/faq">FAQ</a>
-
-      </div>
-
-      <div class="contact-form">
-        <button type="button" class="btn btn-outline-primary">Contact Me</button>
+      <div id="side-nav">
+        <a href="/pages/contact"><%= image_tag('hover-contact-icon.svg', class: "logo") %></a>
+        <a href="/pages/about"><%= image_tag('about-icon-white.svg', class: "logo") %></a>
+        <a href="/pages/merch"><%= image_tag('merch-icon-white.svg', class: "logo") %></a>
+        <a href="/pages/merch"><%= image_tag('faq-icon-white.svg', class: "logo") %></a>
+        <a href="/"><%= image_tag('mango-logo-white.svg', class: "logo") %></a>
       </div>
       <%=yield%>
       <div class="push"></div>
@@ -34,26 +25,36 @@
 
     <footer id="footer">
       <div class="footer-container">
-      	<!-- <div class="footer-logo">
-          <a href="/"><%= image_tag('SweetMangoLogo_Transparent.png', class: "logo") %></a>
-      	</div> -->
-        <div class="footer-links">
-          <ul class="list-unstyled">
-          <li><a href="/pages/about">About</a></li>
-          <li><a href="/pages/contact">Contact</a></li>
-          <li><a href="/pages/merchandise">Merchandise</a></li>
-          <li><a href="/pages/faq">FAQ</a></li>
-        </ul>
+        <div class="row">
+          <div class="col-sm">
+            <div class="contact-info">
+                <!-- <span><%=image_tag ('phone-icon-white.svg')%>647-880-9566</span>
+                <span><%=image_tag ('email-icon-white.svg')%>sweetmango.sugaring@gmail.com</span> -->
+              <ul style="padding-left: 0">
+                <li><%=image_tag ('phone-icon-white.svg')%>647-880-9566</li>
+                <li style="padding-top: 1%"><%=image_tag ('email-icon-white.svg')%>sweetmango.sugaring@gmail.com</li>
+              <ul>
+            </div>
+          </div>
+          <div class="col-sm">
+          	<div class="footer-logo">
+              <a href="/"><%= image_tag('mango-logo-white.svg', class: "mango-footer-logo") %></a>
+          	</div>
+          </div>
+          <div class="col-sm">
+    	      <div class="footer-social-media">
+          		<a href="https://www.facebook.com/SweetMangoBeauty/" target="_blank"><span><%=image_tag ('facebook-logo-white.svg')%></span></a>
+          		<a href="https://www.instagram.com/sweetmanga/" target="_blank"><span><%=image_tag ('instagram-logo-white.svg')%></span></a>
+          		<a href="https://www.yelp.ca/biz/sweet-mango-sugaring-and-esthetics-toronto-4" target="_blank"><span><%=image_tag ('yelp-logo-white.svg')%></span></a>
+      		  </div>
+          </div>
         </div>
-	      <div class="footer-social-media">
-      		<a href="https://www.facebook.com/SweetMangoBeauty/" target="_blank"><span><%=image_tag ('facebook-logo.svg')%></span></a>
-      		<a href="https://www.instagram.com/sweetmanga/" target="_blank"><span><%=image_tag ('instagram-logo.svg')%></span></a>
-      		<a href="https://www.yelp.ca/biz/sweet-mango-sugaring-and-esthetics-toronto-4" target="_blank"><span><%=image_tag ('yelp-logo.svg')%></span></a>
-  		  </div>
-      	<div class="footer-copyright">
-          <p>SITE BY JASMINE NING</p>
-      		<p>COPYRIGHT © 2018. ALL RIGHT RESERVED.</p>
-      	</div>
+        <div class="row" style="padding-left: 42%;">
+        	<div class="footer-copyright">
+            <p>SITE BY JASMINE NING</p>
+        		<p>COPYRIGHT © 2018. ALL RIGHTS RESERVED.</p>
+        	</div>
+        </div>
   	  </div>
     </footer>
   </body>

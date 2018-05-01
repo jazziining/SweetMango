@@ -18,10 +18,22 @@
  $mandarin: #F27D3A;
  $topaz: #FFC27D;
  $neon-carrot: #FF9F51;
+ $carrot-organge: #F49621;
 
- .main-banner-image {
-  height: 100%;
-  width: 100%;
+// .parallax-container {
+//   background-image: url("main-page-banner.jpg");
+//   height: 700px;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+.carousel-inner {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo {
@@ -30,23 +42,42 @@
 
 }
 
-#subnav {
+#side-nav {
+  width: 70px;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  padding: 10px;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  background-color: $neon-carrot;
+  top: 0;
+  left: 0;
+  background-color: $carrot-organge;
+  overflow-x: hidden;
+  padding-top: 20px;
   z-index: 500;
 }
 
-#subnav a {
-  padding: 20px;
-  height: 2%;
-  color: black;
+#side-nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
 }
+
+#side-nav img {
+  height: 30px;
+  width: 30px;
+}
+
+.home-banner-container {
+  position: relative;
+}
+
+.banner-logo {
+  position: absolute;
+  z-index: 10;
+  text-align: right;
+}
+
+.banner-logo img {
+  width: 20%;
+}
+
 
 .contact-form .btn {
   color: $burnt-orange;
@@ -307,9 +338,9 @@
 //
 // }
 
-.container {
-  padding: 5%;
-}
+// .container {
+//   padding: 5%;
+// }
 
 .map-title {
   padding-bottom: 5%;
@@ -357,31 +388,74 @@ html, body {
 
 .footer-container {
   margin-top: 5%;
-  background-color: $neon-carrot;
+  background-color: $carrot-organge;
 }
 
-.footer-logo, .footer-links, .footer-social-media, .footer-copyright {
+.footer-logo, .footer-social-media, .footer-copyright{
   text-align: center;
 }
 
 .footer-copyright p {
-  margin: auto;
   font-size: 10px;
-  background-color: $mandarin;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-copyright {
+  // padding-top: 4%;
+  // padding-left: 30%;
 }
 
 .footer-social-media img {
     width: 30px;
     margin-bottom: 2%;
+    // padding-top: 4%;
+    padding-top:6%;
 }
 
-.footer-links {
-  padding-top: 2%;
+.mango-footer-logo {
+  width: 20px;
+  // padding-top: 3%;
+  padding-top: 5%;
 }
 
-.footer-links a {
-    color: black;
+.contact-info img {
+  width: 30px;
+  margin-right: 2%;
+  margin-left: 2%;
 }
+
+.contact-info span {
+  font-size: 12px;
+  color: white;
+}
+
+.contact-info {
+  padding-top: 4%;
+  text-align: left;
+  padding-left: 40%;
+}
+
+.contact-info li {
+  list-style: none;
+  font-size: 12px;
+  color: white;
+}
+
+.contact-form {
+  margin: 5% 20% 5% 20%;
+}
+
+.contact-header {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+
+
+
+
 
 // .footer-links a {
 //     color: #6195FF;
