@@ -1,0 +1,36 @@
+<div class="contact-form">
+  <div class="contact-header">
+    <h4>Let's Mango</h4>
+    <h5>Book Your Appointment Today</h5>
+  </div>
+  <div class="form">
+    <%= form_for @message, url: create_message_url do |f| %>
+      <%= notice %>
+      <%= @message.errors.full_messages.join(',') %>
+      <div class="form-group">
+        <label class="col-md-4 control-label">Name</label>
+          <%= f.text_field :name, placeholder: 'enter your name', class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label">Email</label>
+        <%= f.email_field :email, placeholder: 'name@example.com', class: 'form-control'%>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label">Idea Date and Time</label>
+        <%= f.text_area :ideal_date_time, placeholder: 'Tell me the date and time that works the best for you, and we can work around that.', class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label">Services</label>
+        <%= f.text_area :services, placeholder: 'tell me what services do you need', class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label">Note</label>
+        <%= f.text_area :note, placeholder: 'leave me a note if you have any concern or question', class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <%= f.submit 'Send', class: 'btn btn-warning'%>
+      </div>
+    <% end %>
+  </div>
+</div>

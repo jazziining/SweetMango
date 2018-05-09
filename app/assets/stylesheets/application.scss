@@ -13,12 +13,18 @@
  */
  @import 'bootstrap';
 
+ @font-face {
+   font-family: 'simplifica';
+   src: font-url('simplifica.ttf');
+   font-weight: bold;
+ }
+
  $burnt-orange: #D45113;
  $sandy-brown: #F29660;
  $mandarin: #F27D3A;
  $topaz: #FFC27D;
  $neon-carrot: #FF9F51;
- $carrot-organge: #F49621;
+ $carrot-orange: #F49621;
 
 // .parallax-container {
 //   background-image: url("main-page-banner.jpg");
@@ -39,7 +45,6 @@
 .logo {
   height: 70px;
   width: 120px;
-
 }
 
 #side-nav {
@@ -47,7 +52,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $carrot-organge;
+  background-color: $carrot-orange;
   overflow-x: hidden;
   padding-top: 20px;
   z-index: 500;
@@ -64,6 +69,31 @@
   width: 30px;
 }
 
+#subnav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  z-index: 100;
+}
+
+#subnav a {
+  padding: 20px;
+  height: 2%;
+  color: black;
+  font-family: simplifica;
+  font-size: 25px;
+}
+
+#subnav img {
+  height: 30px;
+  width: 30px;
+}
+
 .home-banner-container {
   position: relative;
 }
@@ -72,6 +102,7 @@
   position: absolute;
   z-index: 10;
   text-align: right;
+  margin-top: 4%;
 }
 
 .banner-logo img {
@@ -79,33 +110,20 @@
 }
 
 
-.contact-form .btn {
-  color: $burnt-orange;
-  border-color: $burnt-orange;
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-  z-index: 500;
-
-}
-
-.paragraph {
-  text-align: center;
-  padding-left: 15%;
-  padding-right: 15%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.faq-button .btn {
-  color: $burnt-orange;
-  border-color: $burnt-orange;
-}
-
+// .contact-form .btn {
+//   color: $burnt-orange;
+//   border-color: $burnt-orange;
+//   position: fixed;
+//   bottom: 2%;
+//   right: 2%;
+//   z-index: 500;
+//
+// }
 
 .sub-head {
   text-align: center;
   box-sizing: border-box;
+  font-family: Simplifica;
 }
 
 .price-table {
@@ -139,7 +157,7 @@
 }
 
 #pricing-table .plan {
-	font: 12px;
+	font: 10px;
 	text-shadow: 0 1px rgba(255,255,255,.8);
 	background: #fff;
 	border: 1px solid #ddd;
@@ -326,6 +344,7 @@
 
 .about-title {
   text-align: center;
+  font-family: simplifica;
 }
 
 // #map-container {
@@ -345,9 +364,10 @@
 .map-title {
   padding-bottom: 5%;
   text-align: center;
+  font-family: simplifica;
 }
 
-#map-container {
+#map-container iframe {
   text-align: center;
 }
 
@@ -356,9 +376,15 @@
   height: 180px;
 }
 
+
 .insta-title {
   padding-bottom: 5%;
   text-align: center;
+  font-family: simplifica;
+}
+
+.col-md-auto {
+  margin-bottom: 2.5%;
 }
 
 html, body {
@@ -372,15 +398,15 @@ html, body {
 
 }
 
-.row {
-  display: flex;
-}
-
-.col {
-  flex: 1;
-  padding: 1em;
-
-}
+// .row {
+//   display: flex;
+// }
+//
+// .col {
+//   flex: 1;
+//   padding: 1em;
+//
+// }
 
  .push {
   height: 50px;
@@ -388,7 +414,7 @@ html, body {
 
 .footer-container {
   margin-top: 5%;
-  background-color: $carrot-organge;
+  background-color: black;
 }
 
 .footer-logo, .footer-social-media, .footer-copyright{
@@ -450,7 +476,17 @@ html, body {
 .contact-header {
   text-align: center;
   margin: 0 0 50px 0;
+  font-family: simplifica;
+
 }
+
+.form input, textarea {
+  display: block;
+
+}
+
+
+
 
 
 
