@@ -12,7 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20180421040414) do
 
-  create_table "locations", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "messages", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "last_name"
+    t.string "email"
+    t.string "subject"
+    t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
