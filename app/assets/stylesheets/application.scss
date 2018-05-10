@@ -25,15 +25,21 @@
  $topaz: #FFC27D;
  $neon-carrot: #FF9F51;
  $carrot-orange: #F49621;
+ $gunmetal: #2D2F42;
+ $isabelline: #ECEDEE;
+ $linen: #F9F1Ea;
+ $snow: #FCFAFA;
 
-// .parallax-container {
-//   background-image: url("main-page-banner.jpg");
-//   height: 700px;
-//   background-attachment: fixed;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
+
+
+.parallax-container {
+  background-image: url("main-page-banner.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .carousel-inner {
   background-attachment: fixed;
@@ -108,17 +114,6 @@
 .banner-logo img {
   width: 20%;
 }
-
-
-// .contact-form .btn {
-//   color: $burnt-orange;
-//   border-color: $burnt-orange;
-//   position: fixed;
-//   bottom: 2%;
-//   right: 2%;
-//   z-index: 500;
-//
-// }
 
 .sub-head {
   text-align: center;
@@ -334,12 +329,36 @@
   margin-bottom: 20%;
 }
 
-.about-picture {
+.intro-picture {
   width: 50%;
   height: 100%;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 35%;
+}
 
+.intro-title {
+  text-align: center;
+  font-family: simplifica;
+}
+
+.intro-container {
+  background-color: $snow;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.intro-paragrah {
+  margin-right: 35%;
+}
+
+.about-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.about-picture {
+  width: 50%;
+  height: 50%;
+  margin-right: 35%;
 }
 
 .about-title {
@@ -347,19 +366,15 @@
   font-family: simplifica;
 }
 
-// #map-container {
-//   width: 400px;
-//   margin: auto;
-// }
-//
-// #instagram-container {
-//   // margin-right: 5%;
-//
-// }
+.about-paragrah {
+  margin-left: 35%;
+}
 
-// .container {
-//   padding: 5%;
-// }
+.instagram-container {
+  background-color: $isabelline;
+  padding-top: 5%;
+}
+
 
 .map-title {
   padding-bottom: 5%;
@@ -371,11 +386,56 @@
   text-align: center;
 }
 
-.ins-pic {
-  width: 180px;
-  height: 180px;
+#map-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
+.ins-pic {
+  width: 250px;
+  height: 250px;
+}
+
+.faq-pic {
+  width: 250px;
+  height: 250px;
+}
+.faq-container {
+  background-color: $linen;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#caption {
+  position: relative;
+}
+
+#caption .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+  font-family: simplifica;
+  text-align: center;
+
+}
+
+#caption:hover .text {
+  opacity: 1;
+}
+
+#caption .text h4 {
+  // margin: 0;
+  color: Black;
+}
+
+#caption:hover img {
+  -webkit-filter: opacity(20%);
+  filter: opacity(20%);
+}
 
 .insta-title {
   padding-bottom: 5%;
@@ -414,7 +474,7 @@ html, body {
 
 .footer-container {
   margin-top: 5%;
-  background-color: black;
+  background-color: $gunmetal;
 }
 
 .footer-logo, .footer-social-media, .footer-copyright{
