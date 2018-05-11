@@ -17,6 +17,7 @@
    font-family: 'simplifica';
    src: font-url('simplifica.ttf');
    font-weight: bold;
+   font-family: 'Quicksand', sans-serif;
  }
 
  $burnt-orange: #D45113;
@@ -27,7 +28,7 @@
  $carrot-orange: #F49621;
  $gunmetal: #2D2F42;
  $isabelline: #ECEDEE;
- $linen: #F9F1Ea;
+ $linen: #F9F1EA;
  $snow: #FCFAFA;
 
 
@@ -100,8 +101,8 @@
   width: 30px;
 }
 
-.home-banner-container {
-  position: relative;
+.banner-container {
+  padding: 10%;
 }
 
 .banner-logo {
@@ -143,181 +144,211 @@
 // }
 
 
-
-#pricing-table {
-	margin: 100px auto;
-  margin-top: 50px;
-	text-align: center;
-	width: 900px;
+.price-container {
+  padding: 5%;
+  background-color: $snow;
 }
 
-#pricing-table .plan {
-	font: 10px;
-	text-shadow: 0 1px rgba(255,255,255,.8);
-	background: #fff;
-	border: 1px solid #ddd;
-	color: #333;
-	padding: 20px;
-	width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
-	float: left;
-	position: relative;
+.price-title {
+  font-family: simplifica;
+  text-align: center;
 }
 
-#pricing-table #most-popular {
-	z-index: 2;
-	top: -13px;
-	border-width: 3px;
-	padding: 30px 20px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
-	-webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
-	box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+.price-subtitle {
+  text-align: center;
+  font-family: Quicksand;
+  padding-top: 2%;
 }
 
-#pricing-table .plan:nth-child(1) {
-	-moz-border-radius: 5px 0 0 5px;
-	-webkit-border-radius: 5px 0 0 5px;
-	border-radius: 5px 0 0 5px;
+#service-name {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  font-family: Quicksand;
 }
 
-#pricing-table .plan:nth-child(4) {
-	-moz-border-radius: 0 5px 5px 0;
-	-webkit-border-radius: 0 5px 5px 0;
-	border-radius: 0 5px 5px 0;
+#service-price {
+  font-size: 14px;
+  text-align: center;
+  font-family: Quicksand;
 }
 
-#pricing-table h3 {
-	font-size: 20px;
-	font-weight: normal;
-	padding: 10px;
-	margin: -20px -20px 50px -20px;
-	background-color: $topaz;
-	background-image: -moz-linear-gradient(#fff,$topaz);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to($topaz));
-	background-image: -webkit-linear-gradient(#fff, $topaz);
-	background-image: -o-linear-gradient(#fff, $topaz);
-	background-image: -ms-linear-gradient(#fff, $topaz);
-	background-image: linear-gradient(#fff, $topaz);
-}
 
-#pricing-table #most-popular h3 {
-	background-color: $neon-carrot;
-	background-image: -moz-linear-gradient($topaz,$neon-carrot);
-	background-image: -webkit-gradient(linear, left top, left bottom, from($topaz), to($neon-carrot));
-	background-image: -webkit-linear-gradient($topaz, $neon-carrot);
-	background-image: -o-linear-gradient($topaz, $neon-carrot);
-	background-image: -ms-linear-gradient($topaz, $neon-carrot);
-	background-image: linear-gradient($topaz, $neon-carrot);
-	margin-top: -30px;
-	padding-top: 30px;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0;
-}
 
-#pricing-table .plan:nth-child(1) h3 {
-	-moz-border-radius: 5px 0 0 0;
-	-webkit-border-radius: 5px 0 0 0;
-	border-radius: 5px 0 0 0;
-}
-
-#pricing-table .plan:nth-child(4) h3 {
-	-moz-border-radius: 0 5px 0 0;
-	-webkit-border-radius: 0 5px 0 0;
-	border-radius: 0 5px 0 0;
-}
-
-#pricing-table h3 span {
-	display: block;
-	color: #777;
-  background: white;
-	border: 5px solid #fff;
-	height: 100px;
-	width: 100px;
-	margin: 10px auto -65px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-	-moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
-	-webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
-	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
-}
-
-#pricing-table ul {
-	margin: 20px 0 0 0;
-	padding: 0;
-	list-style: none;
-}
-
-#pricing-table li {
-	border-top: 1px solid #ddd;
-	padding: 10px 0;
-}
-
-#pricing-table .signup {
-	position: relative;
-	padding: 8px 20px;
-	margin: 20px 0 0 0;
-	color: #fff;
-	font: bold 14px;
-	text-transform: uppercase;
-	text-decoration: none;
-	display: inline-block;
-	background-color: $sandy-brown;
-	background-image: -moz-linear-gradient($sandy-brown, $mandarin);
-	background-image: -webkit-gradient(linear, left top, left bottom, from($sandy-brown), to($mandarin));
-	background-image: -webkit-linear-gradient($sandy-brown, $mandarin);
-	background-image: -o-linear-gradient($sandy-brown, $mandarin);
-	background-image: -ms-linear-gradient($sandy-brown, $mandarin);
-	background-image: linear-gradient($sandy-brown, $mandarin);
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	text-shadow: 0 1px 0 rgba(0,0,0,.3);
-	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
-	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
-	box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
-}
-
-#pricing-table .signup:hover {
-	background-color: $mandarin;
-	background-image: -moz-linear-gradient($mandarin, $sandy-brown);
-	background-image: -webkit-gradient(linear, left top, left bottom, from($mandarin), to($sandy-brown));
-	background-image: -webkit-linear-gradient($mandarin, $sandy-brown);
-	background-image: -o-linear-gradient($mandarin, $sandy-brown);
-	background-image: -ms-linear-gradient($mandarin, $sandy-brown);
-	background-image: linear-gradient($mandarin, $sandy-brown);
-}
-
-#pricing-table .signup:active, #pricing-table .signup:focus {
-	background: $mandarin;
-	top: 2px;
-	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
-	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
-	box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
-}
-
-/* --------------- */
-
-.clear:before, .clear:after {
-  content:"";
-  display:table
-}
-
-.clear:after {
-  clear:both
-}
-
-.clear {
-  zoom:1
-}
-
-#pricing-table h3 span img {
-  width: 70%;
-  margin: 15px;
-}
+// #pricing-table {
+// 	margin: 100px auto;
+//   margin-top: 50px;
+// 	text-align: center;
+// 	width: 900px;
+// }
+//
+// #pricing-table .plan {
+// 	font: 10px;
+// 	text-shadow: 0 1px rgba(255,255,255,.8);
+// 	background: #fff;
+// 	border: 1px solid #ddd;
+// 	color: #333;
+// 	padding: 20px;
+// 	width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
+// 	float: left;
+// 	position: relative;
+// }
+//
+// #pricing-table #most-popular {
+// 	z-index: 2;
+// 	top: -13px;
+// 	border-width: 3px;
+// 	padding: 30px 20px;
+// 	-moz-border-radius: 5px;
+// 	-webkit-border-radius: 5px;
+// 	border-radius: 5px;
+// 	-moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+// 	-webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+// 	box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+// }
+//
+// #pricing-table .plan:nth-child(1) {
+// 	-moz-border-radius: 5px 0 0 5px;
+// 	-webkit-border-radius: 5px 0 0 5px;
+// 	border-radius: 5px 0 0 5px;
+// }
+//
+// #pricing-table .plan:nth-child(4) {
+// 	-moz-border-radius: 0 5px 5px 0;
+// 	-webkit-border-radius: 0 5px 5px 0;
+// 	border-radius: 0 5px 5px 0;
+// }
+//
+// #pricing-table h3 {
+// 	font-size: 20px;
+// 	font-weight: normal;
+// 	padding: 10px;
+// 	margin: -20px -20px 50px -20px;
+// 	background-color: $topaz;
+// 	background-image: -moz-linear-gradient(#fff,$topaz);
+// 	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to($topaz));
+// 	background-image: -webkit-linear-gradient(#fff, $topaz);
+// 	background-image: -o-linear-gradient(#fff, $topaz);
+// 	background-image: -ms-linear-gradient(#fff, $topaz);
+// 	background-image: linear-gradient(#fff, $topaz);
+// }
+//
+// #pricing-table #most-popular h3 {
+// 	background-color: $neon-carrot;
+// 	background-image: -moz-linear-gradient($topaz,$neon-carrot);
+// 	background-image: -webkit-gradient(linear, left top, left bottom, from($topaz), to($neon-carrot));
+// 	background-image: -webkit-linear-gradient($topaz, $neon-carrot);
+// 	background-image: -o-linear-gradient($topaz, $neon-carrot);
+// 	background-image: -ms-linear-gradient($topaz, $neon-carrot);
+// 	background-image: linear-gradient($topaz, $neon-carrot);
+// 	margin-top: -30px;
+// 	padding-top: 30px;
+// 	-moz-border-radius: 5px 5px 0 0;
+// 	-webkit-border-radius: 5px 5px 0 0;
+// 	border-radius: 5px 5px 0 0;
+// }
+//
+// #pricing-table .plan:nth-child(1) h3 {
+// 	-moz-border-radius: 5px 0 0 0;
+// 	-webkit-border-radius: 5px 0 0 0;
+// 	border-radius: 5px 0 0 0;
+// }
+//
+// #pricing-table .plan:nth-child(4) h3 {
+// 	-moz-border-radius: 0 5px 0 0;
+// 	-webkit-border-radius: 0 5px 0 0;
+// 	border-radius: 0 5px 0 0;
+// }
+//
+// #pricing-table h3 span {
+// 	display: block;
+// 	color: #777;
+//   background: white;
+// 	border: 5px solid #fff;
+// 	height: 100px;
+// 	width: 100px;
+// 	margin: 10px auto -65px;
+// 	-moz-border-radius: 100px;
+// 	-webkit-border-radius: 100px;
+// 	border-radius: 100px;
+// 	-moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+// 	-webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+// 	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+// }
+//
+// #pricing-table ul {
+// 	margin: 20px 0 0 0;
+// 	padding: 0;
+// 	list-style: none;
+// }
+//
+// #pricing-table li {
+// 	border-top: 1px solid #ddd;
+// 	padding: 10px 0;
+// }
+//
+// #pricing-table .signup {
+// 	position: relative;
+// 	padding: 8px 20px;
+// 	margin: 20px 0 0 0;
+// 	color: #fff;
+// 	font: bold 14px;
+// 	text-transform: uppercase;
+// 	text-decoration: none;
+// 	display: inline-block;
+// 	background-color: $sandy-brown;
+// 	background-image: -moz-linear-gradient($sandy-brown, $mandarin);
+// 	background-image: -webkit-gradient(linear, left top, left bottom, from($sandy-brown), to($mandarin));
+// 	background-image: -webkit-linear-gradient($sandy-brown, $mandarin);
+// 	background-image: -o-linear-gradient($sandy-brown, $mandarin);
+// 	background-image: -ms-linear-gradient($sandy-brown, $mandarin);
+// 	background-image: linear-gradient($sandy-brown, $mandarin);
+// 	-moz-border-radius: 3px;
+// 	-webkit-border-radius: 3px;
+// 	border-radius: 3px;
+// 	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+// 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+// 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+// 	box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+// }
+//
+// #pricing-table .signup:hover {
+// 	background-color: $mandarin;
+// 	background-image: -moz-linear-gradient($mandarin, $sandy-brown);
+// 	background-image: -webkit-gradient(linear, left top, left bottom, from($mandarin), to($sandy-brown));
+// 	background-image: -webkit-linear-gradient($mandarin, $sandy-brown);
+// 	background-image: -o-linear-gradient($mandarin, $sandy-brown);
+// 	background-image: -ms-linear-gradient($mandarin, $sandy-brown);
+// 	background-image: linear-gradient($mandarin, $sandy-brown);
+// }
+//
+// #pricing-table .signup:active, #pricing-table .signup:focus {
+// 	background: $mandarin;
+// 	top: 2px;
+// 	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+// 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+// 	box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+// }
+//
+// /* --------------- */
+//
+// .clear:before, .clear:after {
+//   content:"";
+//   display:table
+// }
+//
+// .clear:after {
+//   clear:both
+// }
+//
+// .clear {
+//   zoom:1
+// }
+//
+// #pricing-table h3 span img {
+//   width: 70%;
+//   margin: 15px;
+// }
 
 .carousel-image {
   width: 100%;
@@ -348,6 +379,7 @@
 
 .intro-paragrah {
   margin-right: 35%;
+  font-family: Quicksand;
 }
 
 .about-container {
@@ -368,10 +400,10 @@
 
 .about-paragrah {
   margin-left: 35%;
+  font-family: Quicksand;
 }
 
 .instagram-container {
-  background-color: $isabelline;
   padding-top: 5%;
 }
 
@@ -386,7 +418,8 @@
   text-align: center;
 }
 
-#map-container {
+.map-container {
+  background-color: $isabelline;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -457,16 +490,6 @@ html, body {
   margin-bottom: -50px;
 
 }
-
-// .row {
-//   display: flex;
-// }
-//
-// .col {
-//   flex: 1;
-//   padding: 1em;
-//
-// }
 
  .push {
   height: 50px;

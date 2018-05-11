@@ -21,65 +21,177 @@
 
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
       <div id="services">
-      <div id="pricing-table" class="clear">
-        <h2 class="sub-head" style="margin-top: 50px">Service & Pricing</h2>
-        <h5 class="sub-head">Cash Only<h5>
-        <div class="plan">
-          <h3>Face<span><%=image_tag ('eyelash.svg')%></span></h3>
-          <a class="signup" href="/contact_me">Book Now</a>
-          <ul>
-            <li><b>Eyebrows</b><br>$10.00</li>
-            <li><b>Upper Lip</b><br>$7.00</li>
-            <li><b>Chin</b>$5.00<br></li>
-            <li><b>Full Face</b><br>$15.00</li>
-          </ul>
-        </div>
-        <div class="plan">
-          <h3>Body<span><%=image_tag ('body.svg')%></span></h3>
-    		  <a class="signup" href="/contact_me">Book Now</a>
-          <ul>
-            <li><b>Underarms</b><br>$15.00</li>
-            <li><b>Half Legs</b><br>$30.00</li>
-            <li><b>Full Legs</b><br>$60.00</li>
-    			  <li><b>Arms</b><br>$35.00</li>
-            <li><b>Full Body</b><br>$35.00</li>
-            <li><b>Stomach</b><br>$20.00</li>
-            <li><b>Half Back</b><br>$20.00</li>
-          </ul>
-        </div>
-        <div class="plan">
-          <h3>Bikini<span><%=image_tag ('hip.svg')%></span></h3>
-          <a class="signup" href="/contact_me">Book Now</a>
-          <ul>
-            <li><b>Bikini</b><br>$15.00</li>
-            <li><b>Agressive Bikini</b><br>$25.00</li>
-            <li><b>1st Brazilian</b><br>$25.00</li>
-    			  <li><b>Brazilian</b><br>$40.00</li>
-          </ul>
-        </div>
-        <div class="plan" id="most-popular">
-          <h3>Combo<span><%=image_tag ('deal.svg')%></span></h3>
-          <a class="signup" href="contact_me">Book Now</a>
-          <ul>
-            <li><b>Brazilian & Underarms</b><br>$50.00</li>
-            <li><b>Brazilian & Face</b><br>$50.00</li>
-            <li><b>Brazilian & Half Legs</b><br>$65.00</li>
-            <li><b>Brazilian & Full Legs</b><br>$80.00</li>
-          </ul>
+      <div class="price-container">
+        <h2 class="price-title">Service & Price</h2>
+        <h5 class="price-title">Cash Only</h4>
+
+        <p class="price-subtitle">Face</p>
+        <div class="row" style="padding-bottom: 5%">
+          <div class="col" id="service-name">
+            Eyebrows
+          </div>
+          <div class="col" id="service-price">
+            $5.00
+          </div>
+          <div class="col" id="service-name">
+            Upper Lip
+          </div>
+          <div class="col" id="service-price">
+            $7.00
+          </div>
+          <div class="col" id="service-name">
+            Chin
+          </div>
+          <div class="col" id="service-price">
+            $5.00
+          </div>
+          <div class="col" id="service-name">
+            Full face
+          </div>
+          <div class="col-auto" id="service-price">
+            $15.00
+          </div>
         </div>
 
-        <div class="plan">
-          <h3>Men<span><%=image_tag ('man.svg')%></span></h3>
-          <a class="signup" href="contact_me">Book Now</a>
-          <ul>
-            <li><b>Back</b><br>$40.00</li>
-            <li><b>Chest</b><br>$40.00</li>
-            <li><b>Legs</b><br>$40.00</li>
-            <li><b>Arms</b><br>$40.00</li>
-          </ul>
+        <p class="price-subtitle">Body</p>
+        <div class="row">
+          <div class="col" id="service-name">
+            Underarms
+          </div>
+          <div class="col-auto" id="service-price">
+            $15.00
+          </div>
+          <div class="col" id="service-name">
+            Half Legs
+          </div>
+          <div class="col-auto" id="service-price">
+            $30.00
+          </div>
+          <div class="col" id="service-name">
+            Full Legs
+          </div>
+          <div class="col" id="service-price">
+            $60.00
+          </div>
+          <div class="col" id="service-name">
+            Arms
+          </div>
+          <div class="col" id="service-price">
+            $35.00
+          </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 5%">
+          <div class="col" id="service-name">
+            Full Body
+          </div>
+          <div class="col-auto" id="service-price">
+            $35.00
+          </div>
+          <div class="col" id="service-name">
+            Stomach
+          </div>
+          <div class="col-auto" id="service-price">
+            $20.00
+          </div>
+          <div class="col" id="service-name">
+            Half Back
+          </div>
+          <div class="col" id="service-price">
+            $20.00
+          </div>
+          <div class="col" id="service-name">
+
+          </div>
+          <div class="col" id="service-price">
+
+          </div>
+        </div>
+
+        <p class="price-subtitle">Bikini</p>
+        <div class="row" style="padding-bottom: 5%">
+          <div class="col" id="service-name">
+            Bikini
+          </div>
+          <div class="col-auto" id="service-price">
+            $15.00
+          </div>
+          <div class="col" id="service-name">
+            Agressive
+          </div>
+          <div class="col-auto" id="service-price">
+            $25.00
+          </div>
+          <div class="col" id="service-name">
+            1st Brazilian
+          </div>
+          <div class="col-auto" id="service-price">
+            $45.00
+          </div>
+          <div class="col" id="service-name">
+            Brazilian
+          </div>
+          <div class="col-auto" id="service-price">
+            $40.00
+          </div>
+        </div>
+        <p class="price-subtitle">Combo(Female)</p>
+        <div class="row" style="padding-bottom: 5%">
+          <div class="col" id="service-name">
+            Brazilian & Underarms
+          </div>
+          <div class="col" id="service-price">
+            $50.00
+          </div>
+          <div class="col" id="service-name">
+            Brazilian & Face
+          </div>
+          <div class="col" id="service-price">
+            $50.00
+          </div>
+          <div class="col" id="service-name">
+            Brazilian & Half Legs
+          </div>
+          <div class="col" id="service-price">
+            $65.00
+          </div>
+          <div class="col" id="service-name">
+            Brazilian & Full Legs
+          </div>
+          <div class="col" id="service-price">
+            $80.00
+          </div>
+        </div>
+        <p class="price-subtitle">Male</p>
+        <div class="row">
+          <div class="col" id="service-name">
+            Back
+          </div>
+          <div class="col-auto" id="service-price">
+            $40.00
+          </div>
+          <div class="col" id="service-name">
+            Chest
+          </div>
+          <div class="col-auto" id="service-price">
+            $40.00
+          </div>
+          <div class="col" id="service-name">
+            Legs
+          </div>
+          <div class="col-auto" id="service-price">
+            $40.00
+          </div>
+          <div class="col" id="service-name">
+            Arms
+          </div>
+          <div class="col-auto" id="service-price">
+            $40.00
+          </div>
         </div>
       </div>
     </div>
+
 
       <div id="about"><%= render 'about' %></div>
 
