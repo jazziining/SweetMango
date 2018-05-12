@@ -26,7 +26,6 @@
  $topaz: #FFC27D;
  $neon-carrot: #FF9F51;
  $carrot-orange: #F49621;
- $gunmetal: #2D2F42;
  $isabelline: #ECEDEE;
  $linen: #F9F1EA;
  $snow: #FCFAFA;
@@ -173,6 +172,15 @@
   font-family: Quicksand;
 }
 
+.contact-button img {
+  width: 30px;
+  margin-right: 1%;
+}
+
+.contact-button {
+  text-align: center;
+  padding-top: 5%;
+}
 
 
 // #pricing-table {
@@ -497,7 +505,7 @@ html, body {
 
 .footer-container {
   margin-top: 5%;
-  background-color: $gunmetal;
+  background-color: black;
 }
 
 .footer-logo, .footer-social-media, .footer-copyright{
