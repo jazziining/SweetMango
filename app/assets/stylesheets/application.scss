@@ -26,19 +26,233 @@
  $topaz: #FFC27D;
  $neon-carrot: #FF9F51;
  $carrot-orange: #F49621;
+ $light-grey: #D2D8D8;
+ $platinum: #E8E9E9;
  $isabelline: #ECEDEE;
  $linen: #F9F1EA;
+ $almond: #EFD9CE;
  $snow: #FCFAFA;
 
 
-
-.parallax-container {
+//home page
+//home banner
+.parallax-container-home {
   background-image: url("main-page-banner.jpg");
   height: 700px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+//intro section how sweet it is
+.intro-picture {
+  margin-left: 18%;
+}
+
+.intro-title {
+  text-align: center;
+  font-family: simplifica;
+}
+
+.intro-container {
+  background-color: $snow;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.intro-paragrah {
+  margin-right: 35%;
+  padding-top: 8%;
+  font-family: Quicksand;
+}
+
+//price list
+#pricing-table {
+	margin: 100px auto;
+  margin-top: 5%;
+	text-align: center;
+	width: 900px;
+}
+
+#pricing-table .plan {
+	font: 10px;
+	text-shadow: 0 1px rgba(255,255,255,.8);
+	background: #fff;
+	border: 1px solid #ddd;
+	color: #333;
+	padding: 20px;
+	width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
+	float: left;
+	position: relative;
+	margin-top: 5%;
+}
+
+#pricing-table #most-popular {
+	z-index: 2;
+	top: -13px;
+	border-width: 3px;
+	padding: 30px 20px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+	-webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+	box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+}
+
+#pricing-table .plan:nth-child(1) {
+	-moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+
+#pricing-table .plan:nth-child(4) {
+	-moz-border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+}
+
+#pricing-table h3 {
+	font-size: 20px;
+	// font-weight: normal;
+	font-family: Quicksand;
+	padding: 10px;
+	margin: -20px -20px 50px -20px;
+	background-color: $linen;
+	background-image: -moz-linear-gradient(#fff, $linen);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to($linen));
+	background-image: -webkit-linear-gradient(#fff, $linen);
+	background-image: -o-linear-gradient(#fff, $linen);
+	background-image: -ms-linear-gradient(#fff, $linen);
+	background-image: linear-gradient(#fff, $linen);
+}
+
+#pricing-table #most-popular h3 {
+	background-color: $almond;
+	background-image: -moz-linear-gradient($linen,$almond);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($linen), to($almond));
+	background-image: -webkit-linear-gradient($linen, $almond);
+	background-image: -o-linear-gradient($linen, $almond);
+	background-image: -ms-linear-gradient($linen, $almond);
+	background-image: linear-gradient($linen, $almond);
+	margin-top: -30px;
+	padding-top: 30px;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+#pricing-table .plan:nth-child(1) h3 {
+	-moz-border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0 0;
+}
+
+#pricing-table .plan:nth-child(4) h3 {
+	-moz-border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
+}
+
+#pricing-table h3 span {
+	display: block;
+	color: #777;
+  background: white;
+	border: 5px solid #fff;
+	height: 100px;
+	width: 100px;
+	margin: 10px auto -65px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	-moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+	-webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+}
+
+#pricing-table ul {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+#pricing-table li {
+	border-top: 1px solid #ddd;
+	padding: 10px 0;
+	font-family: Quicksand;
+	font-size: 15px;
+}
+
+#pricing-table .signup {
+	position: relative;
+	font-family: Quicksand;
+	font-size: 15px;
+	padding: 8px 20px;
+	margin: 20px 0 0 0;
+	color: Black;
+	font: bold 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	background-color: $linen;
+	background-image: -moz-linear-gradient($linen, $almond);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($linen), to($almond));
+	background-image: -webkit-linear-gradient($linen, $almond);
+	background-image: -o-linear-gradient($linen, $almond);
+	background-image: -ms-linear-gradient($linen, $almond);
+	background-image: linear-gradient($linen, $almond);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+}
+
+#pricing-table .signup:hover {
+	background-color: $almond;
+	background-image: -moz-linear-gradient($almond, $linen);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($almond), to($linen));
+	background-image: -webkit-linear-gradient($almond, $linen);
+	background-image: -o-linear-gradient($almond, $linen);
+	background-image: -ms-linear-gradient($almond, $linen);
+	background-image: linear-gradient($almond, $linen);
+}
+
+#pricing-table .signup:active, #pricing-table .signup:focus {
+	background: $mandarin;
+	top: 2px;
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+}
+
+/* --------------- */
+
+.clear:before, .clear:after {
+  content:"";
+  display:table
+}
+
+.clear:after {
+  clear:both
+}
+
+.clear {
+  zoom:1
+}
+
+#pricing-table h3 span img {
+  width: 70%;
+  margin: 15px;
+}
+
+
+.faq-banner-picture {
+  height: 600px;
+  margin-left: 14%;
 }
 
 .carousel-inner {
@@ -49,7 +263,7 @@
 }
 
 .logo {
-  height: 70px;
+  height: 120px;
   width: 120px;
 }
 
@@ -63,6 +277,7 @@
   padding-top: 20px;
   z-index: 500;
 }
+
 
 #side-nav a {
   padding: 6px 8px 6px 16px;
@@ -142,36 +357,6 @@
 //   }
 // }
 
-
-.price-container {
-  padding: 5%;
-  background-color: $snow;
-}
-
-.price-title {
-  font-family: simplifica;
-  text-align: center;
-}
-
-.price-subtitle {
-  text-align: center;
-  font-family: Quicksand;
-  padding-top: 2%;
-}
-
-#service-name {
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  font-family: Quicksand;
-}
-
-#service-price {
-  font-size: 14px;
-  text-align: center;
-  font-family: Quicksand;
-}
-
 .contact-button img {
   width: 30px;
   margin-right: 1%;
@@ -182,182 +367,6 @@
   padding-top: 5%;
 }
 
-
-// #pricing-table {
-// 	margin: 100px auto;
-//   margin-top: 50px;
-// 	text-align: center;
-// 	width: 900px;
-// }
-//
-// #pricing-table .plan {
-// 	font: 10px;
-// 	text-shadow: 0 1px rgba(255,255,255,.8);
-// 	background: #fff;
-// 	border: 1px solid #ddd;
-// 	color: #333;
-// 	padding: 20px;
-// 	width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
-// 	float: left;
-// 	position: relative;
-// }
-//
-// #pricing-table #most-popular {
-// 	z-index: 2;
-// 	top: -13px;
-// 	border-width: 3px;
-// 	padding: 30px 20px;
-// 	-moz-border-radius: 5px;
-// 	-webkit-border-radius: 5px;
-// 	border-radius: 5px;
-// 	-moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
-// 	-webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
-// 	box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
-// }
-//
-// #pricing-table .plan:nth-child(1) {
-// 	-moz-border-radius: 5px 0 0 5px;
-// 	-webkit-border-radius: 5px 0 0 5px;
-// 	border-radius: 5px 0 0 5px;
-// }
-//
-// #pricing-table .plan:nth-child(4) {
-// 	-moz-border-radius: 0 5px 5px 0;
-// 	-webkit-border-radius: 0 5px 5px 0;
-// 	border-radius: 0 5px 5px 0;
-// }
-//
-// #pricing-table h3 {
-// 	font-size: 20px;
-// 	font-weight: normal;
-// 	padding: 10px;
-// 	margin: -20px -20px 50px -20px;
-// 	background-color: $topaz;
-// 	background-image: -moz-linear-gradient(#fff,$topaz);
-// 	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to($topaz));
-// 	background-image: -webkit-linear-gradient(#fff, $topaz);
-// 	background-image: -o-linear-gradient(#fff, $topaz);
-// 	background-image: -ms-linear-gradient(#fff, $topaz);
-// 	background-image: linear-gradient(#fff, $topaz);
-// }
-//
-// #pricing-table #most-popular h3 {
-// 	background-color: $neon-carrot;
-// 	background-image: -moz-linear-gradient($topaz,$neon-carrot);
-// 	background-image: -webkit-gradient(linear, left top, left bottom, from($topaz), to($neon-carrot));
-// 	background-image: -webkit-linear-gradient($topaz, $neon-carrot);
-// 	background-image: -o-linear-gradient($topaz, $neon-carrot);
-// 	background-image: -ms-linear-gradient($topaz, $neon-carrot);
-// 	background-image: linear-gradient($topaz, $neon-carrot);
-// 	margin-top: -30px;
-// 	padding-top: 30px;
-// 	-moz-border-radius: 5px 5px 0 0;
-// 	-webkit-border-radius: 5px 5px 0 0;
-// 	border-radius: 5px 5px 0 0;
-// }
-//
-// #pricing-table .plan:nth-child(1) h3 {
-// 	-moz-border-radius: 5px 0 0 0;
-// 	-webkit-border-radius: 5px 0 0 0;
-// 	border-radius: 5px 0 0 0;
-// }
-//
-// #pricing-table .plan:nth-child(4) h3 {
-// 	-moz-border-radius: 0 5px 0 0;
-// 	-webkit-border-radius: 0 5px 0 0;
-// 	border-radius: 0 5px 0 0;
-// }
-//
-// #pricing-table h3 span {
-// 	display: block;
-// 	color: #777;
-//   background: white;
-// 	border: 5px solid #fff;
-// 	height: 100px;
-// 	width: 100px;
-// 	margin: 10px auto -65px;
-// 	-moz-border-radius: 100px;
-// 	-webkit-border-radius: 100px;
-// 	border-radius: 100px;
-// 	-moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
-// 	-webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
-// 	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
-// }
-//
-// #pricing-table ul {
-// 	margin: 20px 0 0 0;
-// 	padding: 0;
-// 	list-style: none;
-// }
-//
-// #pricing-table li {
-// 	border-top: 1px solid #ddd;
-// 	padding: 10px 0;
-// }
-//
-// #pricing-table .signup {
-// 	position: relative;
-// 	padding: 8px 20px;
-// 	margin: 20px 0 0 0;
-// 	color: #fff;
-// 	font: bold 14px;
-// 	text-transform: uppercase;
-// 	text-decoration: none;
-// 	display: inline-block;
-// 	background-color: $sandy-brown;
-// 	background-image: -moz-linear-gradient($sandy-brown, $mandarin);
-// 	background-image: -webkit-gradient(linear, left top, left bottom, from($sandy-brown), to($mandarin));
-// 	background-image: -webkit-linear-gradient($sandy-brown, $mandarin);
-// 	background-image: -o-linear-gradient($sandy-brown, $mandarin);
-// 	background-image: -ms-linear-gradient($sandy-brown, $mandarin);
-// 	background-image: linear-gradient($sandy-brown, $mandarin);
-// 	-moz-border-radius: 3px;
-// 	-webkit-border-radius: 3px;
-// 	border-radius: 3px;
-// 	text-shadow: 0 1px 0 rgba(0,0,0,.3);
-// 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
-// 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
-// 	box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
-// }
-//
-// #pricing-table .signup:hover {
-// 	background-color: $mandarin;
-// 	background-image: -moz-linear-gradient($mandarin, $sandy-brown);
-// 	background-image: -webkit-gradient(linear, left top, left bottom, from($mandarin), to($sandy-brown));
-// 	background-image: -webkit-linear-gradient($mandarin, $sandy-brown);
-// 	background-image: -o-linear-gradient($mandarin, $sandy-brown);
-// 	background-image: -ms-linear-gradient($mandarin, $sandy-brown);
-// 	background-image: linear-gradient($mandarin, $sandy-brown);
-// }
-//
-// #pricing-table .signup:active, #pricing-table .signup:focus {
-// 	background: $mandarin;
-// 	top: 2px;
-// 	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
-// 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
-// 	box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
-// }
-//
-// /* --------------- */
-//
-// .clear:before, .clear:after {
-//   content:"";
-//   display:table
-// }
-//
-// .clear:after {
-//   clear:both
-// }
-//
-// .clear {
-//   zoom:1
-// }
-//
-// #pricing-table h3 span img {
-//   width: 70%;
-//   margin: 15px;
-// }
-
 .carousel-image {
   width: 100%;
   height: auto;
@@ -366,28 +375,6 @@
 .carousel-caption {
   text-align: center;
   margin-bottom: 20%;
-}
-
-.intro-picture {
-  width: 50%;
-  height: 100%;
-  margin-left: 35%;
-}
-
-.intro-title {
-  text-align: center;
-  font-family: simplifica;
-}
-
-.intro-container {
-  background-color: $snow;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.intro-paragrah {
-  margin-right: 35%;
-  font-family: Quicksand;
 }
 
 .about-container {
