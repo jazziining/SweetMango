@@ -20,12 +20,7 @@
    font-family: 'Quicksand', sans-serif;
  }
 
- $burnt-orange: #D45113;
- $sandy-brown: #F29660;
- $mandarin: #F27D3A;
- $topaz: #FFC27D;
- $neon-carrot: #FF9F51;
- $carrot-orange: #F49621;
+
  $light-grey: #D2D8D8;
  $platinum: #E8E9E9;
  $isabelline: #ECEDEE;
@@ -70,6 +65,7 @@
 //price list
 #pricing-table {
 	margin: 100px auto;
+	margin-bottom: 0;
   margin-top: 5%;
 	text-align: center;
 	width: 900px;
@@ -85,10 +81,10 @@
 	width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
 	float: left;
 	position: relative;
-	margin-top: 5%;
+  margin-top: 5%;
 }
 
-#pricing-table #most-popular {
+#pricing-table .plan:hover {
 	z-index: 2;
 	top: -13px;
 	border-width: 3px;
@@ -128,7 +124,7 @@
 	background-image: linear-gradient(#fff, $linen);
 }
 
-#pricing-table #most-popular h3 {
+#pricing-table .plan:hover h3 {
 	background-color: $almond;
 	background-image: -moz-linear-gradient($linen,$almond);
 	background-image: -webkit-gradient(linear, left top, left bottom, from($linen), to($almond));
@@ -222,7 +218,7 @@
 }
 
 #pricing-table .signup:active, #pricing-table .signup:focus {
-	background: $mandarin;
+	background: $almond;
 	top: 2px;
 	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
 	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
@@ -249,11 +245,107 @@
   margin: 15px;
 }
 
+.contact-button img {
+  width: 30px;
+  margin-right: 1%;
+}
 
+.contact-button {
+  text-align: center;
+	padding-bottom: 5%;
+}
+
+//Amanda about section
+.about-container {
+	padding-top: 10%;
+  padding-bottom: 5%;
+	background-color: $linen;
+}
+
+.about-picture {
+
+  height: 25%;
+  margin-right: 35%;
+}
+
+.about-title {
+  text-align: center;
+  font-family: simplifica;
+}
+
+.about-paragrah {
+  margin-left: 35%;
+  font-family: Quicksand;
+}
+
+//testmonials section
+.testimonials-container {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.testmonials-picture {
+ height: 500px;
+}
+
+.testmonials-title {
+	text-align: center;
+	font-family: Simplifica;
+	padding-top: 5%;
+}
+
+//FAQ section
 .faq-banner-picture {
   height: 600px;
   margin-left: 14%;
 }
+
+.faq-pic {
+  width: 250px;
+  height: 250px;
+}
+
+.faq-container {
+  background-color: $linen;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#caption {
+  position: relative;
+}
+
+#caption .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+  font-family: simplifica;
+  text-align: center;
+}
+
+#caption:hover .text {
+  opacity: 1;
+}
+
+#caption .text h4 {
+  // margin: 0;
+  color: Black;
+}
+
+#caption:hover img {
+  -webkit-filter: opacity(20%);
+  filter: opacity(20%);
+}
+
+
+
+
+
+
 
 .carousel-inner {
   background-attachment: fixed;
@@ -267,16 +359,16 @@
   width: 120px;
 }
 
-#side-nav {
-  width: 70px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: $carrot-orange;
-  overflow-x: hidden;
-  padding-top: 20px;
-  z-index: 500;
-}
+// #side-nav {
+//   width: 70px;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: $carrot-orange;
+//   overflow-x: hidden;
+//   padding-top: 20px;
+//   z-index: 500;
+// }
 
 
 #side-nav a {
@@ -300,6 +392,7 @@
   text-align: center;
   background-color: white;
   z-index: 100;
+	padding-left: 29%;
 }
 
 #subnav a {
@@ -314,6 +407,7 @@
   height: 30px;
   width: 30px;
 }
+
 
 .banner-container {
   padding: 10%;
@@ -336,20 +430,20 @@
   font-family: Simplifica;
 }
 
-.price-table {
-  list-style-type: none;
-  border: 1.5px solid $burnt-orange;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  color: $burnt-orange;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.price-table:hover {
-    box-shadow: 0 8px 12px 0 $burnt-orange;
-}
+// .price-table {
+//   list-style-type: none;
+//   border: 1.5px solid $burnt-orange;
+//   margin: 0;
+//   padding: 0;
+//   background-color: white;
+//   color: $burnt-orange;
+//   -webkit-transition: 0.3s;
+//   transition: 0.3s;
+// }
+//
+// .price-table:hover {
+//     box-shadow: 0 8px 12px 0 $burnt-orange;
+// }
 
 // @media only screen and (max-width: 600px) {
 //   .columns {
@@ -377,27 +471,6 @@
   margin-bottom: 20%;
 }
 
-.about-container {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.about-picture {
-  width: 50%;
-  height: 50%;
-  margin-right: 35%;
-}
-
-.about-title {
-  text-align: center;
-  font-family: simplifica;
-}
-
-.about-paragrah {
-  margin-left: 35%;
-  font-family: Quicksand;
-}
-
 .instagram-container {
   padding-top: 5%;
 }
@@ -409,60 +482,15 @@
   font-family: simplifica;
 }
 
-#map-container iframe {
-  text-align: center;
-}
-
-.map-container {
-  background-color: $isabelline;
-  padding-top: 5%;
-  padding-bottom: 5%;
+#map {
+  height: 60%;
+	width: 60%;
+	margin: auto
 }
 
 .ins-pic {
   width: 250px;
   height: 250px;
-}
-
-.faq-pic {
-  width: 250px;
-  height: 250px;
-}
-.faq-container {
-  background-color: $linen;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-#caption {
-  position: relative;
-}
-
-#caption .text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  opacity: 0;
-  transition: all 0.8s ease;
-  font-family: simplifica;
-  text-align: center;
-
-}
-
-#caption:hover .text {
-  opacity: 1;
-}
-
-#caption .text h4 {
-  // margin: 0;
-  color: Black;
-}
-
-#caption:hover img {
-  -webkit-filter: opacity(20%);
-  filter: opacity(20%);
 }
 
 .insta-title {
