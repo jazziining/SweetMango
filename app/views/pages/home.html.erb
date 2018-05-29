@@ -1,202 +1,172 @@
-<html>
-<head>
-</head>
-  <body>
-    <div class="parallax-container-home">
+
+<!-- <div class="parallax-container-home">
+</div> -->
+
+<div class="home-page-banner">
+  <%= image_tag('main-page-banner.jpg', class:"img-fluid", alt:"Responsive image") %>
+</div>
+
+<div class="intro-container">
+  <div class="row" id="intro-row">
+    <div class="col-12 col-sm-12 col-md-6">
+      <%= image_tag('intro-about-pic.jpeg', class:"img-fluid", alt:"Responsive image", id:"intro-picture")%>
     </div>
-
-    <div class="intro-container">
-      <div class="row">
-        <div class="col">
-          <%= image_tag('intro-about-pic.jpeg', class:"intro-picture")%>
-        </div>
-        <div class="col">
-          <div class="intro-paragrah">
-            <h2 class="intro-title">How Sweet It is</h2>
-            <p>Find out why men and women are switching from painful and outdated techniques of hair removal such as waxing, and realizing the sweet truth about Sweet Mango. This product is 100% organic, all natural and completely safe (it’s even edible). Reinvented with the art of sugaring, the Sweet Mango technique leaves clients with smooth and sexy skin that beats out any of its competitors.</p>
-          </div>
-        </div>
-
+    <div class="col-12 col-sm-12 col-md-6">
+      <div class="intro-paragrah">
+        <h2 class="intro-title">How Sweet It is</h2>
+        <p>Find out why men and women are switching from painful and outdated techniques of hair removal such as waxing, and realizing the sweet truth about Sweet Mango. This product is 100% organic, all natural and completely safe (it’s even edible). Reinvented with the art of sugaring, the Sweet Mango technique leaves clients with smooth and sexy skin that beats out any of its competitors.</p>
       </div>
     </div>
+  </div>
+</div>
 
-    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-      <div id="services">
-        <div id="pricing-table" class="clear">
-          <h2 class="sub-head" style="margin-top: 50px">Service & Pricing</h2>
-          <h5 class="sub-head">Cash Only<h5>
-          <div class="plan">
-            <h3>Face<span><%=image_tag ('eyelash.svg')%></span></h3>
-            <a class="signup" href="/contact_me">Book Now</a>
-            <ul>
-              <li><b>Eyebrows</b><br>$10.00</li>
-              <li><b>Upper Lip</b><br>$7.00</li>
-              <li><b>Chin</b>$5.00<br></li>
-              <li><b>Full Face</b><br>$15.00</li>
-            </ul>
-          </div>
-          <div class="plan">
-            <h3>Body<span><%=image_tag ('body.svg')%></span></h3>
-            <a class="signup" href="/contact_me">Book Now</a>
-            <ul>
-              <li><b>Underarms</b><br>$15.00</li>
-              <li><b>Half Legs</b><br>$30.00</li>
-              <li><b>Full Legs</b><br>$60.00</li>
-              <li><b>Arms</b><br>$35.00</li>
-              <li><b>Full Body</b><br>$35.00</li>
-              <li><b>Stomach</b><br>$20.00</li>
-              <li><b>Half Back</b><br>$20.00</li>
-            </ul>
-          </div>
-          <div class="plan">
-            <h3>Bikini<span><%=image_tag ('hip.svg')%></span></h3>
-            <a class="signup" href="/contact_me">Book Now</a>
-            <ul>
-              <li><b>Bikini</b><br>$15.00</li>
-              <li><b>Agressive Bikini</b><br>$25.00</li>
-              <li><b>1st Brazilian</b><br>$25.00</li>
-              <li><b>Brazilian</b><br>$40.00</li>
-            </ul>
-          </div>
-          <div class="plan" id="most-popular">
-            <h3>Combo<span><%=image_tag ('deal.svg')%></span></h3>
-            <a class="signup" href="contact_me">Book Now</a>
-            <ul>
-              <li><b>Brazilian & Underarms</b><br>$50.00</li>
-              <li><b>Brazilian & Face</b><br>$50.00</li>
-              <li><b>Brazilian & Half Legs</b><br>$65.00</li>
-              <li><b>Brazilian & Full Legs</b><br>$80.00</li>
-            </ul>
-          </div>
-
-          <div class="plan">
-            <h3>Men<span><%=image_tag ('man.svg')%></span></h3>
-            <a class="signup" href="contact_me">Book Now</a>
-            <ul>
-              <li><b>Back</b><br>$40.00</li>
-              <li><b>Chest</b><br>$40.00</li>
-              <li><b>Legs</b><br>$40.00</li>
-              <li><b>Arms</b><br>$40.00</li>
-            </ul>
-          </div>
-
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <div id="services">
+    <div class="container">
+      <div id="pricing-table" class="clear">
+        <h2 class="sub-head" style="margin-top: 50px">Service & Pricing</h2>
+        <h5 class="sub-head">Cash Only</h5>
+        <div class="plan">
+          <h3>Face<span><%=image_tag ('eyelash.svg')%></span></h3>
+          <a class="signup" href="/contact_me">Book Now</a>
+          <ul>
+            <li><b>Eyebrows</b><br>$10.00</li>
+            <li><b>Upper Lip</b><br>$7.00</li>
+            <li><b>Chin</b>$5.00<br></li>
+            <li><b>Full Face</b><br>$15.00</li>
+          </ul>
         </div>
-      </div>
-        <div class="contact-button">
-          <p>*Appointment by contact only*</p>
-          <button type="button" class="btn btn-outline-dark"><a href="mailto:sweetmango.sugaring@gmail.com">Book Today</a></button>
-          <p style="padding-top: 1.5%"><%=image_tag ('phone-icon-black.svg')%>647-880-9566</p>
+        <div class="plan">
+          <h3>Body<span><%=image_tag ('body.svg')%></span></h3>
+          <a class="signup" href="/contact_me">Book Now</a>
+          <ul>
+            <li><b>Underarms</b><br>$15.00</li>
+            <li><b>Half Legs</b><br>$30.00</li>
+            <li><b>Full Legs</b><br>$60.00</li>
+            <li><b>Arms</b><br>$35.00</li>
+            <li><b>Full Body</b><br>$35.00</li>
+            <li><b>Stomach</b><br>$20.00</li>
+            <li><b>Half Back</b><br>$20.00</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Bikini<span><%=image_tag ('hip.svg')%></span></h3>
+          <a class="signup" href="/contact_me">Book Now</a>
+          <ul>
+            <li><b>Bikini</b><br>$15.00</li>
+            <li><b>Agressive Bikini</b><br>$25.00</li>
+            <li><b>1st Brazilian</b><br>$25.00</li>
+            <li><b>Brazilian</b><br>$40.00</li>
+          </ul>
+        </div>
+        <div class="plan" id="most-popular">
+          <h3>Combo<span><%=image_tag ('deal.svg')%></span></h3>
+          <a class="signup" href="contact_me">Book Now</a>
+          <ul>
+            <li><b>Brazilian & Underarms</b><br>$50.00</li>
+            <li><b>Brazilian & Face</b><br>$50.00</li>
+            <li><b>Brazilian & Half Legs</b><br>$65.00</li>
+            <li><b>Brazilian & Full Legs</b><br>$80.00</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Men<span><%=image_tag ('man.svg')%></span></h3>
+          <a class="signup" href="contact_me">Book Now</a>
+          <ul>
+            <li><b>Back</b><br>$40.00</li>
+            <li><b>Chest</b><br>$40.00</li>
+            <li><b>Legs</b><br>$40.00</li>
+            <li><b>Arms</b><br>$40.00</li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
+    <div class="contact-button">
+      <p>*Appointment by contact only*</p>
+      <button type="button" class="btn btn-outline-dark"><a href="mailto:sweetmango.sugaring@gmail.com">Book Today</a></button>
+      <p style="padding-top: 1.5%"><%=image_tag ('phone-icon-black.svg')%>647-880-9566</p>
+    </div>
+  </div>
+</div>
 
 
-      <div id="about"><%= render 'about' %></div>
+<div id="about"><%= render 'about' %></div>
 
-      <div id="testimonials">
-        <div class="testmonials-title">
-          <h2>Testimonials<h2>
-          <h4>Hear what other people say about Sweet Mango</h4>
-        </div>
-        <div class="testimonials-container">
-          <div class="row justify-content-md-center">
-            <div class="col-md-auto" id="testmonials-caption">
-              <%= image_tag('testmonial-pic-1.jpg', class:"testmonials-picture")%>
-            </div>
-            <div class="col-md-auto" id="testmonials-caption">
-              <%= image_tag('testmonial-pic-2.jpg', class:"testmonials-picture")%>
-            </div>
-            <div class="col-md-auto" id="testmonials-caption">
-              <%= image_tag('testmonial-pic-3.jpg', class:"testmonials-picture")%>
-            </div>
-          </div>
-        </div>
+<div id="testimonials">
+  <div class="testmonials-title">
+    <h2>Testimonials</h2>
+    <h4>Hear what other people say about Sweet Mango</h4>
+  </div>
+  <div class="testimonials-container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto" id="testmonials-caption">
+        <%= image_tag('testmonial-pic-1.jpg', class:"testmonials-picture") %>
       </div>
-
-      <div id="faq"><%= render 'faq' %></div>
-
-    <div class="banner-container">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <%= image_tag('carousel-pic-1.jpg', class:"carousel-image")%>
-            <div class="carousel-caption d-none d-md-block">
-              <h4>"I've been to other places to getsugared but none were as efficient or professional as Amanda"</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag('carousel-pic-2.jpg', class:"carousel-image")%>
-            <div class="carousel-caption d-none d-md-block">
-              <h4>"I've been to other places to getsugared but none were as efficient or professional as Amanda"</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag('carousel-pic-3.jpg', class:"carousel-image")%>
-            <div class="carousel-caption d-none d-md-block">
-              <h4>"I've been to other places to getsugared but none were as efficient or professional as Amanda"</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag('carousel-pic-4.jpg', class:"carousel-image")%>
-            <div class="carousel-caption d-none d-md-block">
-              <h4>"I've been to other places to getsugared but none were as efficient or professional as Amanda"</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <%= image_tag('carousel-pic-5.jpg', class:"carousel-image")%>
-            <div class="carousel-caption d-none d-md-block">
-              <h4>"I've been to other places to getsugared but none were as efficient or professional as Amanda"</h4>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+      <div class="col-md-auto" id="testmonials-caption">
+        <%= image_tag('testmonial-pic-2.jpg', class:"testmonials-picture") %>
+      </div>
+      <div class="col-md-auto" id="testmonials-caption">
+        <%= image_tag('testmonial-pic-3.jpg', class:"testmonials-picture") %>
       </div>
     </div>
+  </div>
+</div>
 
-              <h2 class="map-title">240 Queen Street West, Toronto</h2>
-              <div id="map"></div>
+<div id="faq"><%= render 'faq' %></div>
 
-
-
-      <div class="instagram-container">
-        <h2 class="insta-title">Instagram Feed</h2>
-        <div class="row justify-content-md-center">
-          <div class="col-md-auto">
-            <%= image_tag('ins-pic-1.jpg', class:"ins-pic")%>
-          </div>
-          <div class="col-md-auto">
-            <%= image_tag('ins-pic-2.jpg', class:"ins-pic")%>
-          </div>
-          <div class="col-md-auto">
-            <%= image_tag('ins-pic-3.jpg', class:"ins-pic")%>
-          </div>
-        </div>
-        <div class="row justify-content-md-center">
-          <div class="col-md-auto">
-            <%= image_tag('ins-pic-4.jpg', class:"ins-pic")%>
-          </div>
-          <div class="col-md-auto">
-            <%= image_tag('ins-pic-5.jpg', class:"ins-pic")%>
-          </div>
-          <div class="col-md-auto">
-            <%= image_tag('ins-pic-6.jpg', class:"ins-pic")%>
-          </div>
-        </div>
-
-
-
-
-
-
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag('carousel-pic-1.jpeg', class:"d-block w-100", alt:"First slide")%>
     </div>
+    <div class="carousel-item">
+      <%= image_tag('carousel-pic-2.jpeg', class:"d-block w-100", alt:"Second slide")%>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag('carousel-pic-3.jpeg', class:"d-block w-100", alt:"Third slide")%>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag('carousel-pic-4.jpeg', class:"d-block w-100", alt:"Forth slide")%>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag('carousel-pic-5.jpeg', class:"d-block w-100", alt:"Fifth slide")%>
+    </div>
+  </div>
+</div>
 
-  </body>
+<h2 class="map-title">240 Queen Street West, Toronto</h2>
 
-</html>
+<div id="map"></div>
+
+<!-- <div class="instagram-container">
+  <h2 class="insta-title">Instagram Feed</h2>
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <%= image_tag('ins-pic-1.jpg', class:"ins-pic")%>
+    </div>
+    <div class="col-md-auto">
+      <%= image_tag('ins-pic-2.jpg', class:"ins-pic")%>
+    </div>
+    <div class="col-md-auto">
+      <%= image_tag('ins-pic-3.jpg', class:"ins-pic")%>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto">
+      <%= image_tag('ins-pic-4.jpg', class:"ins-pic")%>
+    </div>
+    <div class="col-md-auto">
+      <%= image_tag('ins-pic-5.jpg', class:"ins-pic")%>
+    </div>
+    <div class="col-md-auto">
+      <%= image_tag('ins-pic-6.jpg', class:"ins-pic")%>
+    </div>
+  </div> -->

@@ -28,21 +28,91 @@
  $almond: #EFD9CE;
  $snow: #FCFAFA;
 
+ @media only screen and (max-width: 425px) {
+   nav#subnav {
+     padding-left: 5%;
+   }
+ 	#subnav a {
+ 		text-align: left;
+ 	}
+ 	a.navbar-brand {
+ 		display: none;
+ 	}
+ 	.nav-item {
+ 		padding-top: 0 !important;
+ 	}
+
+ 	.nav-link {
+ 		padding-top: 0 !important;
+ 		padding-bottom: 0 !important;
+ 		font-size: 20px !important;
+ 	}
+
+ 	#intro-picture {
+    margin-left: 0 !important;
+ 	}
+
+ 	.intro-paragrah {
+ 		margin-right: 5% !important;
+    margin-left: 5% !important;
+ 	}
+
+  #pricing-table .plan{
+    width: 60% !important;
+    margin: 20%;
+    margin-bottom: 0;
+  }
+
+  #services .container {
+    padding-right: 0 !important;
+  }
+
+  .contact-button {
+    margin-bottom: 5%;
+    padding-top: 0;
+
+  }
+
+  .about-paragrah {
+    margin: 5% !important;
+  }
+
+ .col-md-auto {
+    text-align: center !important;
+  }
+
+  img.faq-pic{
+    width: 150px;
+    height: 150px;
+  }
+
+  #map {
+    height: 100% !important;
+    width: 100% !important;
+  }
+ }
 
 //home page
 //home banner
 .parallax-container-home {
   background-image: url("main-page-banner.jpg");
   height: 700px;
+	max-width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.home-page-banner img {
+	width: 100%;
+	height: auto;
+}
+
 //intro section how sweet it is
-.intro-picture {
-  margin-left: 18%;
+
+#intro-picture {
+	margin-left: 20%;
 }
 
 .intro-title {
@@ -57,7 +127,7 @@
 }
 
 .intro-paragrah {
-  margin-right: 35%;
+  margin-right: 20%;
   padding-top: 8%;
   font-family: Quicksand;
 }
@@ -68,7 +138,6 @@
 	margin-bottom: 0;
   margin-top: 5%;
 	text-align: center;
-	width: 900px;
 }
 
 #pricing-table .plan {
@@ -78,7 +147,7 @@
 	border: 1px solid #ddd;
 	color: #333;
 	padding: 20px;
-	width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
+	width: 20%; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
 	float: left;
 	position: relative;
   margin-top: 5%;
@@ -263,9 +332,8 @@
 }
 
 .about-picture {
-
-  height: 25%;
-  margin-right: 35%;
+  width: 100%;
+  margin: auto;
 }
 
 .about-title {
@@ -341,12 +409,6 @@
   filter: opacity(20%);
 }
 
-
-
-
-
-
-
 .carousel-inner {
   background-attachment: fixed;
   background-position: center;
@@ -407,7 +469,6 @@
   height: 30px;
   width: 30px;
 }
-
 
 .banner-container {
   padding: 10%;
