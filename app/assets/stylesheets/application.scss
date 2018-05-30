@@ -22,6 +22,7 @@
 
 
  $light-grey: #D2D8D8;
+ $quick-silver: #A3A3A3;
  $platinum: #E8E9E9;
  $isabelline: #ECEDEE;
  $linen: #F9F1EA;
@@ -77,6 +78,10 @@
     margin: 5% !important;
   }
 
+  .about-picture {
+    padding: 0 !important;
+  }
+
  .col-md-auto {
     text-align: center !important;
   }
@@ -121,7 +126,6 @@
 }
 
 .intro-container {
-  background-color: $snow;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -132,7 +136,15 @@
   font-family: Quicksand;
 }
 
+.intro-paragrah p {
+  color: $quick-silver;
+}
+
 //price list
+#services {
+  background-color: $snow;
+}
+
 #pricing-table {
 	margin: 100px auto;
 	margin-bottom: 0;
@@ -328,12 +340,11 @@
 .about-container {
 	padding-top: 10%;
   padding-bottom: 5%;
-	background-color: $linen;
 }
 
 .about-picture {
   width: 100%;
-  margin: auto;
+  padding-right: 25%;
 }
 
 .about-title {
@@ -342,8 +353,12 @@
 }
 
 .about-paragrah {
-  margin-left: 35%;
+  margin-left: 25%;
   font-family: Quicksand;
+}
+
+.about-paragrah p {
+    color: $quick-silver;
 }
 
 //testmonials section
