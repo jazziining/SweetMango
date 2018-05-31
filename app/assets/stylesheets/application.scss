@@ -114,8 +114,35 @@
  }
 
  @media only screen and (max-width: 768px) {
+   nav#subnav {
+     padding-left: 5%;
+   }
 
+ 	#subnav a {
+ 		text-align: left;
+ 	}
 
+ 	a.navbar-brand {
+ 		display: none;
+ 	}
+
+ 	.nav-item {
+ 		padding-top: 0 !important;
+ 	}
+
+ 	.nav-link {
+ 		padding-top: 0 !important;
+ 		padding-bottom: 0 !important;
+ 		font-size: 20px !important;
+ 	}
+
+  #intro-picture {
+    margin-left: 5% !important;
+  }
+
+  .testmonials-picture {
+    height: 300px !important;
+  }
 }
 
 //home page
