@@ -30,15 +30,22 @@
  $snow: #FCFAFA;
 
  @media only screen and (max-width: 425px) {
+   .home-page-banner {
+     margin-top: 10% !important;
+   }
+
    nav#subnav {
      padding-left: 5%;
    }
+
  	#subnav a {
  		text-align: left;
  	}
+
  	a.navbar-brand {
  		display: none;
  	}
+
  	.nav-item {
  		padding-top: 0 !important;
  	}
@@ -71,7 +78,6 @@
   .contact-button {
     margin-bottom: 5%;
     padding-top: 0;
-
   }
 
   .about-paragrah {
@@ -105,8 +111,12 @@
     width: 100% !important;
   }
 
-
  }
+
+ @media only screen and (max-width: 768px) {
+
+
+}
 
 //home page
 //home banner
@@ -123,6 +133,10 @@
 .home-page-banner img {
 	width: 100%;
 	height: auto;
+}
+
+.home-page-banner {
+  margin-top: 5%;
 }
 
 //intro section how sweet it is
@@ -389,6 +403,12 @@
 	padding-top: 5%;
 }
 
+//sugar photo
+.sugar-pic-container {
+  margin: 5% 10% 5% 10%;
+}
+
+
 //FAQ section
 .faq-banner-picture {
   height: 600px;
@@ -458,18 +478,6 @@
   width: 120px;
 }
 
-// #side-nav {
-//   width: 70px;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   background-color: $carrot-orange;
-//   overflow-x: hidden;
-//   padding-top: 20px;
-//   z-index: 500;
-// }
-
-
 #side-nav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -528,27 +536,6 @@
   font-family: Simplifica;
 }
 
-// .price-table {
-//   list-style-type: none;
-//   border: 1.5px solid $burnt-orange;
-//   margin: 0;
-//   padding: 0;
-//   background-color: white;
-//   color: $burnt-orange;
-//   -webkit-transition: 0.3s;
-//   transition: 0.3s;
-// }
-//
-// .price-table:hover {
-//     box-shadow: 0 8px 12px 0 $burnt-orange;
-// }
-
-// @media only screen and (max-width: 600px) {
-//   .columns {
-//     width: 100%;
-//   }
-// }
-
 .contact-button img {
   width: 30px;
   margin-right: 1%;
@@ -572,7 +559,6 @@
 .instagram-container {
   padding-top: 5%;
 }
-
 
 .map-title {
   padding-bottom: 5%;
@@ -673,62 +659,3 @@ html, body {
   display: block;
 
 }
-
-
-
-
-
-
-
-
-
-// .footer-links a {
-//     color: #6195FF;
-//     text-decoration: none;
-//     -webkit-transition: 0.2s opacity;
-//     transition: 0.2s opacity;
-// }
-//
-// .footer-links a:hover, a:focus {
-//     text-decoration: none;
-//     outline: none;
-//     opacity: 0.8;
-//     color: #6195FF;
-// }
-
-
-//
-// .footer-logo {
-//     text-align: center;
-//     margin-bottom: 40px;
-// }
-//
-//
-// .footer-follow {
-//     text-align: center;
-//     margin-bottom: 20px;
-// }
-// .footer-follow li {
-//     display: inline-block;
-//     margin-right: 10px;
-//     margin-bottom: 13px;
-// }
-//
-// .footer-follow li a {
-//   display: inline-block;
-//   width: 50px;
-//   height: 50px;
-//   line-height: 50px;
-//   text-align: center;
-//   border-radius: 3px;
-//   background-color: #6195FF;
-//   color:#FFF;
-// }
-//
-// .footer-copyright p {
-//     text-align: center;
-//     font-size: 14px;
-//     text-transform: uppercase;
-//     margin: 0;
-//     color:#868F9B;
-// }
