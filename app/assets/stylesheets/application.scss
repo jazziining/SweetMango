@@ -86,15 +86,26 @@
     text-align: center !important;
   }
 
-  img.faq-pic{
-    width: 150px;
-    height: 150px;
+  img.faq-pic-1{
+    width: 190px;
+    height: 190px;
+  }
+
+  img.faq-pic-2{
+    width: 190px;
+    height: 190px;
+  }
+
+  #caption {
+    padding: 0 !important;
   }
 
   #map {
     height: 100% !important;
     width: 100% !important;
   }
+
+
  }
 
 //home page
@@ -383,7 +394,12 @@
   margin-left: 14%;
 }
 
-.faq-pic {
+.faq-pic-1 {
+  width: 250px;
+  height: 250px;
+}
+
+.faq-pic-2 {
   width: 250px;
   height: 250px;
 }
@@ -392,6 +408,12 @@
   background-color: $linen;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.faq-title {
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: simplifica;
 }
 
 #caption {
@@ -467,7 +489,7 @@
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  background-color: white;
+  background-color: $snow;
   z-index: 100;
 	padding-left: 29%;
 }
@@ -579,6 +601,8 @@
   margin-bottom: 2.5%;
 }
 
+//whole page structure for the footer
+
 html, body {
   height: 100%;
   margin: 0;
@@ -594,9 +618,11 @@ html, body {
   height: 50px;
  }
 
+//footer
+
 .footer-container {
   margin-top: 5%;
-  background-color: black;
+  background-color: $snow;
 }
 
 .footer-logo, .footer-social-media, .footer-copyright{
@@ -605,50 +631,31 @@ html, body {
 
 .footer-copyright p {
   font-size: 10px;
-  color: white;
+  color: black;
   margin: auto;
   text-align: center;
-}
-
-.footer-copyright {
-  // padding-top: 4%;
-  // padding-left: 30%;
 }
 
 .footer-social-media img {
     width: 30px;
     margin-bottom: 2%;
     // padding-top: 4%;
-    padding-top:6%;
+    padding-top:2%;
 }
 
 .mango-footer-logo {
   width: 20px;
   // padding-top: 3%;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
-.contact-info img {
-  width: 30px;
-  margin-right: 2%;
-  margin-left: 2%;
-}
-
-.contact-info span {
-  font-size: 12px;
-  color: white;
+.contact-info p {
+  font-size: 15px;
+  font-family: Quicksand;
 }
 
 .contact-info {
-  padding-top: 4%;
-  text-align: left;
-  padding-left: 40%;
-}
-
-.contact-info li {
-  list-style: none;
-  font-size: 12px;
-  color: white;
+  text-align: center;
 }
 
 .contact-form {

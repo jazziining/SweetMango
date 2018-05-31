@@ -46,36 +46,31 @@
 
     <footer id="footer">
       <div class="footer-container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="contact-info">
-                <!-- <span><%=image_tag ('phone-icon-white.svg')%>647-880-9566</span>
-                <span><%=image_tag ('email-icon-white.svg')%>sweetmango.sugaring@gmail.com</span> -->
-              <ul style="padding-left: 0">
-                <li><%=image_tag ('phone-icon-white.svg')%>647-880-9566</li>
-                <li style="padding-top: 1%"><%=image_tag ('email-icon-white.svg')%>sweetmango.sugaring@gmail.com</li>
-              <ul>
+        <div class="footer-logo">
+          <a href="/"><%= image_tag('mango-logo-black.svg', class: "mango-footer-logo") %></a>
+        </div>
+        <div class="footer-social-media">
+          <a href="https://www.facebook.com/SweetMangoBeauty/" target="_blank"><span><%=image_tag ('facebook-logo-black.svg')%></span></a>
+          <a href="https://www.instagram.com/sweetmanga/" target="_blank"><span><%=image_tag ('instagram-logo-black.svg')%></span></a>
+          <a href="https://www.yelp.ca/biz/sweet-mango-sugaring-and-esthetics-toronto-4" target="_blank"><span><%=image_tag ('yelp-logo-black.svg')%></span></a>
+        </div>
+        <div class="contact-info">
+          <div class="row">
+            <div class="col">
+              <p>647-880-9566</p>
+            </div>
+            <div class="col">
+              <p>sweetmango.sugaring@gmail.com</p>
+            </div>
+            <div class="col">
+              <p>240 Queen Street West, Toronto</p>
             </div>
           </div>
-          <div class="col-sm">
-          	<div class="footer-logo">
-              <a href="/"><%= image_tag('mango-logo-white.svg', class: "mango-footer-logo") %></a>
-          	</div>
-          </div>
-          <div class="col-sm">
-    	      <div class="footer-social-media">
-          		<a href="https://www.facebook.com/SweetMangoBeauty/" target="_blank"><span><%=image_tag ('facebook-logo-white.svg')%></span></a>
-          		<a href="https://www.instagram.com/sweetmanga/" target="_blank"><span><%=image_tag ('instagram-logo-white.svg')%></span></a>
-          		<a href="https://www.yelp.ca/biz/sweet-mango-sugaring-and-esthetics-toronto-4" target="_blank"><span><%=image_tag ('yelp-logo-white.svg')%></span></a>
-      		  </div>
-          </div>
         </div>
-        <div class="row" style="padding-left: 42%;">
-        	<div class="footer-copyright">
-            <p>SITE BY JASMINE NING</p>
-        		<p>COPYRIGHT © 2018. ALL RIGHTS RESERVED.</p>
-        	</div>
+        <div class="footer-copyright">
+          <p>COPYRIGHT © 2018. ALL RIGHTS RESERVED.</p>
         </div>
+      </div>
   	  </div>
     </footer>
 
